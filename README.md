@@ -1,4 +1,5 @@
 # California Wildfires Analysis
+## Team & Project Overview
 As the final project for Data Analytics boot camp, our team was made up of these members: Cassie Xu, Jinfang Li, Stephen Tan, Rachel Tsuchiyama and Wendy Mudzinski.  The subject we chose was the California Wildfires Analysis.  As the summer comes to a close, it's important to analyze the past fire data and current precipitation values to get a gauge on what we may experience in the next upcoming fire season.  Some of the variables that can cause fires include weather patterns, fuel/environmental factors, drought/water levels, the number of fire stations/resources available at the time of an incident, and preventative measures.
 
 ## High-Level Overview
@@ -14,6 +15,9 @@ From the model in Figure2, we've applied xxx algorithm to train the data.  From 
 
 ![Figure2](./Resources/Figure2)
 (Figure2)
+## Dataset Resources
+https://www.kaggle.com/ananthu017/california-wildfire-incidents-20132020 California WildFires (2013-2020)
+https://www.ncdc.noaa.gov/cag/county/mapping/4/pcp/202003/1/mean Californian rainfall dataset
 
 ## Conclusion
 In summary, by looking at the analyzed data, we can assess that 2022 may be another challenging year for fires in California.  When applying the xxx algorithm, the model shows that xxx.  With the xxx algorithm, it looks as though xxx may predict xxx.
