@@ -1456,6 +1456,9 @@ let fires = [{"MeasurementID":"2013-10-CA-007-305","AcresBurned":"305","Location
 {"MeasurementID":"2019-9-CA-109-83","AcresBurned":"83","LocationID":"CA-109","Latitude":"37.838333","Longitude":"-120.625556","Month":"9","Year":"2019","Location":"Tuolumne"},
 {"MeasurementID":"2019-9-CA-111-279","AcresBurned":"279","LocationID":"CA-111","Latitude":"34.71011","Longitude":"-119.3547","Month":"9","Year":"2019","Location":"Ventura"}];
 
+// Define empty array, which will have many objects (dicitonaries) for each file
+fireArray = [];
+
 function fetchLatLong(fires){
     
     //Outer loop to get the dataList
@@ -1472,10 +1475,39 @@ function fetchLatLong(fires){
                     longitude = dataList[key]
             }
         }
-        //print
-        console.log("["+latitude+","+longitude+"]");
+
+        // append object to list
+        fireArray.push({
+            key:    "Fire " + f,
+            coordinates:  [latitude, longitude]
+        });
+
+       //  console.log(fireArray[f]);
 
     }
+
 }
 
 fetchLatLong(fires);
+
+
+function writeToCsv(listOfObjects) {
+
+    // list object looks like [{..}, {..}, ..., {..} ]
+    
+    // get the keys of each object in the list
+    const dictionaryKeys = Object.keys(listOfObjects[0]);
+
+    // join each key with its value and add that to a long string, separated by a comma
+    const dictValuesAsCsv = listOfObjects.map(dict => (
+        dictionaryKeys.map(key => dict[key]).join(',')
+    ));
+
+    console.log(dictValuesAsCsv);
+    return dictValuesAsCsv
+}
+
+writeToCsv(fireArray);
+
+
+
