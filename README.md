@@ -138,5 +138,6 @@ The neurons to our neural network model can't been always use the maximum number
 - Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
 - Description of how the model was trained (or retrained, if the team is using an existing model)
 - Description and explanation of model's confusion matrix, including final accuracy score
+
  Confusion matrix is also known as "error-matrix". It is the most commonly used option to report the outcome of your model of N-class classification problem. Classification problem is a teask that requires the use of machine learning algorithms that learn how to assign a class lable to examples from the problem demain.
-For the model we chose(Multiple Neuron Neural Network), there is no need confusion matrix analysis.
+For the model we chose(Multiple Neuron Neural Network)。
