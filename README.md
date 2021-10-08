@@ -64,13 +64,9 @@ There were four roles to be assumed by the members of our group, which was compr
 
 **Segment Three**
 - **Square** - *Complete peer reviews on the code.*
-- 
 - **Triangle** - *Create a draft presentation to share with your class.*
-- 
 - **Circle** - *Create a dashboard to display your findings.*
-- 
-- **X** -*Perform a quality assurance check on project deliverables against rubric requirements, and test the code.*
-- 
+- **X** - *Perform a quality assurance check on project deliverables against rubric requirements, and test the code.*
 
 ----------
 
