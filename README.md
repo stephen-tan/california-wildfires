@@ -72,7 +72,7 @@ There were four roles to be assumed by the members of our group, which was compr
 
 ## Database
 A provisional database was created that includes sample data that mimics the expected final database schema and is tied to our draft machine learning model. The image below shows the initial dataframe that was created with the cleaned Kaggle Wildfires (2013-2020) dataset. Quite a bit of data cleaning including: 
-- drop null rows.
+- dropped null rows.
 - created new columns since there were no primary keys in any of the tables.
 these keys were created by concatenating county IDs with measurement year.
 - combined weather (rainfall and temperature) data first, since both of those datasets were from the same source.
